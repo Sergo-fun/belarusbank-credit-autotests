@@ -1,0 +1,11 @@
+VALID_CREDIT_AMOUNTS = [
+    1000,
+    5000,
+    10000,
+]
+
+INVALID_CREDIT_AMOUNTS = [
+    0,
+    -100,
+]
+
