@@ -1,7 +1,5 @@
-from time import sleep
 
 import allure
-import pytest
 
 from pages.credit_calculator_page import CreditCalculatorPage
 
@@ -10,7 +8,7 @@ from pages.credit_calculator_page import CreditCalculatorPage
 @allure.story("Отображение калькулятора")
 
 
-@allure.title("TC-01. Проверка отображения кредитного калькулятора")
+@allure.title("ТК-1. Проверка отображения кредитного калькулятора")
 def test_credit_calculator_is_displayed(driver):
     page = CreditCalculatorPage(driver)
 
@@ -19,7 +17,7 @@ def test_credit_calculator_is_displayed(driver):
 
 
 
-@allure.title("TC-02. Проверка наличия элементов калькулятора")
+@allure.title("TК-02. Проверка наличия элементов калькулятора")
 def test_calculator_elements_are_displayed(driver):
     page = CreditCalculatorPage(driver)
 
@@ -41,7 +39,7 @@ def test_calculator_elements_are_displayed(driver):
 
 
 
-@allure.title("TC-03. Расчёт максимальной суммы кредита")
+@allure.title("TК-03. Расчёт максимальной суммы кредита")
 def test_calculate_maximum_credit_amount(driver):
     page = CreditCalculatorPage(driver)
 
@@ -67,7 +65,7 @@ def test_calculate_maximum_credit_amount(driver):
         page.ensure_calculation_result_displayed()
 
 
-@allure.title("TC-04. Расчёт необходимого дохода для получения кредита")
+@allure.title("TК-04. Расчёт необходимого дохода для получения кредита")
 def test_calculate_maximum_income(driver):
     page = CreditCalculatorPage(driver)
 
@@ -93,7 +91,7 @@ def test_calculate_maximum_income(driver):
         page.ensure_calculation_result_displayed()
 
 
-@allure.title("TC-05. Проверка запрета ввода букв в поле суммы кредита")
+@allure.title("TК-05. Проверка запрета ввода букв в поле суммы кредита")
 def test_calculate_maximum_income(driver):
     page = CreditCalculatorPage(driver)
 
